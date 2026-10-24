@@ -48,12 +48,15 @@
     }
 
     /* La fotografía se colocará como fondo cuando esté subida a GitHub */
-    .portada::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -2;
-      background:
+    ..portada::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url('Screenshot_20240803_095109_com.bigwinepot.nwdn.international_edit_768088130598246.jpg');
+  background-size: cover;
+  background-position: center 30%;
+}
         radial-gradient(ellipse at 70% 35%, #a69b89 0%, #6c655a 42%, #292824 100%);
       background-size: cover;
       background-position: center 35%;
